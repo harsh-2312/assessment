@@ -10,6 +10,9 @@ int div(int a,int b);
 
 int main(){
     int choice, result,a,b;
+    char op;
+
+    do{
 
     printf("\n-------------menu--------------\n");
     printf("1.additon\n");
@@ -51,6 +54,15 @@ int main(){
     }
 
     printf("---------------------------------\n");
+
+    printf("\nDo you want to perform another calculation? (y/n):");
+    scanf("%s", &op);
+
+    }while(op =='y' || op =='Y');
+
+    printf("----------------thank you-------------------\n");
+ 
+    
     return 0;
 }
 
